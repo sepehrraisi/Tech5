@@ -1,0 +1,123 @@
+{% extends 'base/_base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}
+    باشگاه تکفایو | تکفایو
+{% endblock %}
+
+{% block intro %}
+    <div class="intro-section single-cover" id="home-section">
+
+        <div class="slide-1 " style="background-image: url({% static 'template_statics/pics/img_2.jpg' %});"
+             data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="row justify-content-center align-items-center text-center">
+                            <div class="col-lg-6">
+                                <h1 data-aos="fade-up" data-aos-delay="0">باشگاه تکفایو</h1>
+{#                                {% if not request.user.is_authenticated %}#}
+                                    <p data-aos="fade-up" data-aos-delay="100">در رویداد ثبت نام کنید
+                                        &bullet; <a href="{% url 'account:register' %}" class="text-white">
+                                            ثبت نام</a>
+                                    </p>
+{#                                {% endif %}#}
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9">
+                    <h3 class="text-black mb-2 text-center">(باشگاه تکفایو: جامعه نخبگان نسل پنج ایران)
+
+                    </h3>
+                    <p style="text-align: justify">
+                        باشگاه تکفایو ،یک جامعه تخصصی ویژه افرادی است که دارای خصوصیات زیر باشند:
+
+                        <br>
+                        ۱. دارای دستکم یک مهارت نسل پنجمی در حد کارشناس خبره. یا صاحب یک کسب و کار مدرن نسل پنجمی.
+                        <br>
+                        ۲. دارای اهداف روشن توسعه فردی برای ده سال آینده.
+                        <br>
+                        ۳. دارای همت،اراده و انگیزه ی کافی برای تلاش در راه رشد شخصی، تولید ثروت و توسعه ایران.
+                        <br>
+                        ۴. سلامت اخلاقی، التزام به قوانین کشور و احترام به نظرات مخالف.
+                        <br>
+                        ۵. انعطاف پذیری شخصیتی و آمادگی کافی برای آموختن رویکردهای مدرن و کنار گذاشتن الگوهای کهنه.
+                        <br>
+
+                        عضویت در باشگاه تکفایو میتواند شانل مزایای زیر باشد:
+                        <br>
+                        ۱. ایجاد ارتباط موثر و سازنده با دیگر متخصصان و نخبگان توسعه گرای ایران و جهان در راستای توان
+                        افزایی،تیم سازی و هم آموزی.
+                        <br>
+                        ۲. ایجاد ارتباط با صاحبان کسب و کار، بنگاه های اقتصادی، دانشگاه ها،مراکز پژوهشی و تحقیقاتی هایتک
+                        کشور جهت ورود موفق به چرخه تولید ثروت.
+                        <br>
+                        ۳. دریافت کارت طلایی vip که با داشتن آن میتوانید از کلیه رویداد های تکفایو به رایگان استفاده
+                        کنید. همچنین کلیه خدمات هولدینگ آران برای آنها با تخفیفات ویژه ارائه میگردد.
+                        <br>
+                        ۴. ورود به اکوسیستم دانش بنیان کشور و بهره گیری از مزیت های آن،شامل امریه خدمت سربازی، معافیت
+                        های گمرکی،بیمه تکمیلی،وام های کم بهره و ...
+                    </p>
+
+                    {% for message in messages %}
+                        <div class="alert alert-info my-2">{{ message }}</div>
+                    {% endfor %}
+
+{#                    {% if request.user.is_authenticated %}#}
+{#                        <form method="post" class="form-box border">#}
+{#                            {% csrf_token %}#}
+{#                            <div class="row">#}
+{#                                <div class="col-12 mb-2">#}
+{#                                    <label for="{{ form.gender.id_for_label }}" class="text-black">جنسیت:</label>#}
+{#                                    {{ form.gender|add_class:"form-control" }}#}
+{#                                </div>#}
+{#                                <div class="col-12 mb-2">#}
+{#                                    <label for="id_location" class="text-black">منطقه#}
+{#                                        جغرافیایی:</label>#}
+{#                                    <select name="location" id="id_location" class="form-control"></select>#}
+{#                                </div>#}
+{#                                <div class="col-12 mb-2">#}
+{#                                    <label for="{{ form.activities.id_for_label }}" class="text-black">فعالیت#}
+{#                                        ها:</label>#}
+{#                                    {{ form.activities }}#}
+{#                                </div>#}
+{#                                <div class="col-12 mb-2">#}
+{#                                    <label for="{{ form.files.id_for_label }}" class="text-black">تصاویر مجموعه:</label>#}
+{#                                    {{ form.files|add_class:"form-control" }}#}
+{#                                </div>#}
+{#                                <div class="col-12 mb-2">#}
+{#                                    <label for="{{ form.description.id_for_label }}" class="text-black">توضیحات:</label>#}
+{#                                    {{ form.description|add_class:"form-control" }}#}
+{#                                </div>#}
+{#                                <div class="col-12">#}
+{#                                    <button type="submit" class="btn btn-primary btn-pill">ارسال</button>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </form>#}
+{#                    {% if request.user.is_not_authenticated %}#}
+                                                <div class="rounded border p-3">
+                                                    <h6>فرم <a href="{% url 'account:register' %}">عضویت
+                                                        </a> در باشگاه تکفایو.</h6>
+                                                </div>
+{#                    {% endif %}#}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block manual_js_code %}
+    <script src="{% static 'template_statics/js/select_locations.js' %}"></script>
+{% endblock %}

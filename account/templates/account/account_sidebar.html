@@ -1,0 +1,15 @@
+<ul class="list-group">
+    <li class="list-group-item">
+        {{ request.user.get_full_name }} (<a
+            href="{% url 'account:logout' %}">خروج</a>)
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'account:account-user-requests' %}?type=gym">درخواست های باشگاه</a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'account:account-user-requests' %}?type=teammate">درخواست های هم تیمی</a>
+    </li>
+    <li class="list-group-item">
+        <a href="{% url 'account:account-user-requests' %}?type=coach">درخواست های مربی</a>
+    </li>
+</ul>

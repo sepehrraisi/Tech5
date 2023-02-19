@@ -1,0 +1,114 @@
+{% extends 'base/_base.html' %}
+{% load static %}
+
+{% block title %}
+    صفحه اصلی | تکفایو
+{% endblock %}
+
+{% block intro %}
+    <div class="intro-section" id="home-section">
+
+        <div class="slide-1" style="background-image: url({% static 'template_statics/pics/im2.jpg' %});"
+             data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4">
+                                <h1 data-aos="fade-up" data-aos-delay="100">تکفایو</h1>
+                                <p class="mb-4" data-aos="fade-up" data-aos-delay="200">رویداد تکرارشونده اقتصاد نسل 5</p>
+                            </div>
+
+                            <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
+                                <div class="form-box">
+                                    <div class="border border-info rounded p-2 mt-2">
+                                        <p class="font-weight-bold text-black">
+                                            <a href="/events/" style=" margin-top: 1px"> ثبت نام در رویداد فریلنسر شو</a>
+                                        </p>
+                                        <p style="color: #545b62; font-size: 12px; margin-top: 1px">سفر قهرمانی خود اشتغالی</p>
+
+                                    </div>
+{#                                    <div class="border border-info rounded p-2 mt-2">#}
+{#                                        <p class="font-weight-bold text-black">#}
+{#                                            <a href="{% url 'core:gym-request' %}">درخواست باشگاه</a>#}
+{#                                        </p>#}
+{#                                    </div>#}
+{#                                    <div class="border border-info rounded p-2 mt-2">#}
+{#                                        <p class="font-weight-bold text-black">#}
+{#                                            <a href="{% url 'core:coach-request' %}">درخواست مربی</a>#}
+{#                                        </p>#}
+{#                                    </div>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section" id="programs-section">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
+                    <h1 class="">فریلنسرشو | سفر قهرمانی خود اشتغالی</h1>
+                </div>
+            </div>
+             <div class="row mb-5 align-items-center">
+
+                    <h2 class="text-black mb-4">توضیح رویداد فریلنسرشو...</h2>
+
+
+            </div>
+
+{#            <div class="row mb-5 align-items-center">#}
+{#                <div class="col-lg-7 mb-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">#}
+{#                    <img src="{% static 'template_statics/pics/50.jpg' %}" alt="Image"#}
+{#                         class="img-fluid">#}
+{#                </div>#}
+{#                <div class="col-lg-4 mr-auto order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">#}
+{#                    <h2 class="text-black mb-4">هم تیمیت رو پیدا کن</h2>#}
+{##}
+{#                    <div class="d-flex align-items-center custom-icon-wrap mb-3">#}
+{#                        <span class="custom-icon-inner ml-3"><span class="icon icon-graduation-cap"></span></span>#}
+{#                        <div><h3 class="m-0">درخواست هم تیمی بده</h3></div>#}
+{#                    </div>#}
+{#                    <div class="d-flex align-items-center custom-icon-wrap mb-3">#}
+{#                        <span class="custom-icon-inner ml-3"><span class="icon icon-graduation-cap"></span></span>#}
+{#                        <div><h3 class="m-0">درخواست باشگاه بده</h3></div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="d-flex align-items-center custom-icon-wrap">#}
+{#                        <span class="custom-icon-inner ml-3"><span class="icon icon-university"></span></span>#}
+{#                        <div><h3 class="m-0">درخواست مربی ثبت کن</h3></div>#}
+{#                    </div>#}
+{##}
+{#                </div>#}
+{#            </div>#}
+
+
+{% include 'core/sites.html' %}
+
+
+
+
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="site-section pb-0">
+
+        <div class="future-blobs">
+            <div class="blob_2">
+                <img src="{% static 'template_statics/pics/blob_2.svg' %}" alt="Image">
+            </div>
+            <div class="blob_1">
+                <img src="{% static 'template_statics/pics/blob_1.svg' %}" alt="Image">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
