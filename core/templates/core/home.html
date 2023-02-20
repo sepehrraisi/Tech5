@@ -1,114 +1,336 @@
-{% extends 'base/_base.html' %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tech5 | تکفایو</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+</head>
+<body>
 
-{% block title %}
-    صفحه اصلی | تکفایو
-{% endblock %}
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="{% static 'assets/img/logo.png' %}" alt="Global">
+    <p>Global</p>
+  </a>
+  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
 
-{% block intro %}
-    <div class="intro-section" id="home-section">
-
-        <div class="slide-1" style="background-image: url({% static 'template_statics/pics/im2.jpg' %});"
-             data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 mb-4">
-                                <h1 data-aos="fade-up" data-aos-delay="100">تکفایو</h1>
-                                <p class="mb-4" data-aos="fade-up" data-aos-delay="200">رویداد تکرارشونده اقتصاد نسل 5</p>
-                            </div>
-
-                            <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
-                                <div class="form-box">
-                                    <div class="border border-info rounded p-2 mt-2">
-                                        <p class="font-weight-bold text-black">
-                                            <a href="/events/" style=" margin-top: 1px"> ثبت نام در رویداد فریلنسر شو</a>
-                                        </p>
-                                        <p style="color: #545b62; font-size: 12px; margin-top: 1px">سفر قهرمانی خود اشتغالی</p>
-
-                                    </div>
-{#                                    <div class="border border-info rounded p-2 mt-2">#}
-{#                                        <p class="font-weight-bold text-black">#}
-{#                                            <a href="{% url 'core:gym-request' %}">درخواست باشگاه</a>#}
-{#                                        </p>#}
-{#                                    </div>#}
-{#                                    <div class="border border-info rounded p-2 mt-2">#}
-{#                                        <p class="font-weight-bold text-black">#}
-{#                                            <a href="{% url 'core:coach-request' %}">درخواست مربی</a>#}
-{#                                        </p>#}
-{#                                    </div>#}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="{% static 'assets/img/logo.png' %}" alt="Global">
+            <p>Global</p>
+          </a>
+          <button class="header--cta cta">ثبت نام</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>صفحه اصلی</span></li>
+            <li><span>رویداد های جاری</span></li>
+            <li><span>درباره ما</span></li>
+            <li><span>سخنرانان</span></li>
+            <li><span>تماس با ما</span></li>
+            <li><span>ثبت نام در رویداد</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>تکفایو<br>رویداد تکرارشونده<br>اقتصاد نسل 5</h1>
+                <button class="cta">ثبت نام
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="{% static 'assets/img/introduction-visual.png' %}" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>ارتباط سازی با متخصصان</h3>
+                  <p>ایجاد ارتباط موثر و سازنده با دیگر متخصصان و نخبگان توسعه گرای ایران و جهان در راستای توان افزایی،تیم سازی و هم آموزی.</p>
+                </a>
+                <a href="#0">
+                  <h3>ارتباط کسب و کار ها</h3>
+                  <p>ایجاد ارتباط با صاحبان کسب و کار، بنگاه های اقتصادی، دانشگاه ها،مراکز پژوهشی و تحقیقاتی هایتک کشور جهت ورود موفق به چرخه تولید ثروت.</p>
+                </a>
+                <a href="#0">
+                  <h3>خدمات دانش بنیان</h3>
+                  <p>ورود به اکوسیستم دانش بنیان کشور و بهره گیری از مزیت های آن،شامل امریه خدمت سربازی، معافیت های گمرکی،بیمه تکمیلی،وام های کم بهره و ...</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>رویداد های جاری</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'assets/img/work-victory.jpg' %}" alt="Sarajob">
+                      </div>
+                      <p class="slider--item-title">سراجاب</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'assets/img/work-metiew-smith.jpg' %}" alt="آپفکتور">
+                      </div>
+                      <p class="slider--item-title">آپفکتور</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'assets/img/work-alex-nowak.jpg' %}" alt="آران5">
+                      </div>
+                      <p class="slider--item-title">آران 5</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section" id="programs-section">
-        <div class="container">
-            <div class="row mb-5 justify-content-center">
-                <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
-                    <h1 class="">فریلنسرشو | سفر قهرمانی خود اشتغالی</h1>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
                 </div>
+              </div>
             </div>
-             <div class="row mb-5 align-items-center">
-
-                    <h2 class="text-black mb-4">توضیح رویداد فریلنسرشو...</h2>
-
-
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>رویداد<br>زنجیره ای<br>نسل 5</h2>
+                <p>تکفایو | Tech5<br>یک رویداد زنجیره ای<br>در حوزه های مرتبط با انقلاب چهارم صنعتی(Industry4.0)<br> یا نسل پنجم فنآوری(Technology 5) می باشد.</p>
+                <a href="{% url 'account:about-us' %}">بیشتر بخوانید
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="{% static 'assets/img/about-visual.png' %}" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="#0">
+                  <h3>سخنرانان</h3>
+                </a>
+                <a href="#0">
+                  <h3>فلسفه</h3>
+                </a>
+                <a href="#0">
+                  <h3>تاریخچه</h3>
+                </a>
+              </div>
             </div>
-
-{#            <div class="row mb-5 align-items-center">#}
-{#                <div class="col-lg-7 mb-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">#}
-{#                    <img src="{% static 'template_statics/pics/50.jpg' %}" alt="Image"#}
-{#                         class="img-fluid">#}
-{#                </div>#}
-{#                <div class="col-lg-4 mr-auto order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">#}
-{#                    <h2 class="text-black mb-4">هم تیمیت رو پیدا کن</h2>#}
-{##}
-{#                    <div class="d-flex align-items-center custom-icon-wrap mb-3">#}
-{#                        <span class="custom-icon-inner ml-3"><span class="icon icon-graduation-cap"></span></span>#}
-{#                        <div><h3 class="m-0">درخواست هم تیمی بده</h3></div>#}
-{#                    </div>#}
-{#                    <div class="d-flex align-items-center custom-icon-wrap mb-3">#}
-{#                        <span class="custom-icon-inner ml-3"><span class="icon icon-graduation-cap"></span></span>#}
-{#                        <div><h3 class="m-0">درخواست باشگاه بده</h3></div>#}
-{#                    </div>#}
-{##}
-{#                    <div class="d-flex align-items-center custom-icon-wrap">#}
-{#                        <span class="custom-icon-inner ml-3"><span class="icon icon-university"></span></span>#}
-{#                        <div><h3 class="m-0">درخواست مربی ثبت کن</h3></div>#}
-{#                    </div>#}
-{##}
-{#                </div>#}
-{#            </div>#}
-
-
-{% include 'core/sites.html' %}
-
-
-
-
-
-        </div>
+          </li>
+          <li class="l-section section">
+            <div class="speakers">
+              <h2>سخنرانان</h2>
+              <div class="speakers--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'assets/img/work-victory.jpg' %}" alt="Sarajob">
+                      </div>
+                      <p class="slider--item-title">سراجاب</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'assets/img/work-metiew-smith.jpg' %}" alt="آپفکتور">
+                      </div>
+                      <p class="slider--item-title">آپفکتور</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{% static 'assets/img/work-alex-nowak.jpg' %}" alt="آران5">
+                      </div>
+                      <p class="slider--item-title">آران 5</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>استان البرز، کرج، حصارک، دانشگاه خوارزمی، خانه خلاق</p>
+                    <a href="mailto:contact@tech5.ir">contact@tech5.ir</a>
+                    <a href="tel:+989125866638">+98 912 586 6638</a>
+                    <a href="tel:+989393750790">+98 939 375 0790</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="#0">در نقشه</a></li>
+                    <li><a href="mailto:contact@tech5.ir">تماس با ما</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+              <h2>کدام رویداد را شرکت میکنید</h2>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request">
+                <div class="work-request--options">
+{#                  <span class="options-a">#}
+{#                    <input id="opt-1" type="checkbox" value="app design">#}
+{#                    <label for="opt-1">#}
+{#                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"#}
+{#                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">#}
+{#                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">#}
+{#                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>#}
+{#                      </g>#}
+{#                      </svg>#}
+{#                      رویداد فریلنسر شو#}
+{#                    </label>#}
+{#                    <input id="opt-2" type="checkbox" value="graphic design">#}
+{#                    <label for="opt-2">#}
+{#                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"#}
+{#                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">#}
+{#                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">#}
+{#                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>#}
+{#                      </g>#}
+{#                      </svg>#}
+{#                      Graphic Design#}
+{#                    </label>#}
+{#                    <input id="opt-3" type="checkbox" value="motion design">#}
+{#                    <label for="opt-3">#}
+{#                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"#}
+{#                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">#}
+{#                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">#}
+{#                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>#}
+{#                      </g>#}
+{#                      </svg>#}
+{#                      Motion Design#}
+{#                    </label>#}
+{#                  </span>#}
+                  <span class="options-b">
+{#                    <input id="opt-4" type="checkbox" value="ux design">#}
+{#                    <label for="opt-4">#}
+{#                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"#}
+{#                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">#}
+{#                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">#}
+{#                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>#}
+{#                      </g>#}
+{#                      </svg>#}
+{#                      UX Design#}
+{#                    </label>#}
+{#                    <input id="opt-5" type="checkbox" value="webdesign">#}
+{#                    <label for="opt-5">#}
+{#                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"#}
+{#                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">#}
+{#                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">#}
+{#                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>#}
+{#                      </g>#}
+{#                      </svg>#}
+{#                      Webdesign#}
+{#                    </label>#}
+                    <input id="opt-6" type="checkbox" value="marketing">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      رویداد فریلنسر شو
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false">
+                    <label for="name">نام و نام خانوادگی</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false">
+                    <label for="email">آدرس ایمیل</label>
+                  </div>
+                </div>
+                <input type="submit" value="ثبت نام">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-{% endblock %}
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">صفحه اصلی</li>
+    <li>رویداد های جاری</li>
+    <li>درباره ما</li>
+    <li>سخنرانان</li>
+    <li>تماس با ما</li>
+    <li>ثبت نام در رویداد</li>
+  </ul>
+</div>
 
-{% block content %}
-    <div class="site-section pb-0">
-
-        <div class="future-blobs">
-            <div class="blob_2">
-                <img src="{% static 'template_statics/pics/blob_2.svg' %}" alt="Image">
-            </div>
-            <div class="blob_1">
-                <img src="{% static 'template_statics/pics/blob_1.svg' %}" alt="Image">
-            </div>
-        </div>
-    </div>
-{% endblock %}
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{% static 'assets/js/vendor/jquery-2.2.4.min.js' %}"><\/script>')</script>
+<script src="{% static 'assets/js/functions-min.js' %}"></script>
+</body>
+</html>
