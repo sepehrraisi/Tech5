@@ -785,7 +785,8 @@ body {
     .about--banner img {
       position: absolute;
       bottom: -90px;
-      right: -12px; }
+      left: 0;
+      transform: scaleX(-1); }
   .about--options {
     display: flex;
     max-width: 600px;
