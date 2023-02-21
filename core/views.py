@@ -11,6 +11,9 @@ from core.models import TeammateRequest, GymRequest, CoachRequest
 def home_view(request):
     return render(request, 'core/home.html')
 
+def home_ex_view(request):
+    return render(request, 'core/home_ex.html')
+
 
 class TeammateRequestFormView(SuccessMessageMixin, CreateView):
     model = TeammateRequest
