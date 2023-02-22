@@ -476,7 +476,7 @@ body {
       left: -15px;
       right: 0;
       height: 2px;
-      background-color: #282828; }
+      background-color: #3d3d3d; }
     .intro--banner::after {
       content: "";
       position: absolute;
@@ -530,7 +530,7 @@ body {
     .intro--options > a {
       max-width: 250px;
       text-decoration: none;
-      color: #282828;
+      color: #3d3d3d;
       transition: color 0.2s ease-in-out; }
       .intro--options > a:hover {
         color: #fff; }
@@ -667,7 +667,7 @@ body {
       height: 50px;
       align-items: center;
       justify-content: center;
-      background-color: #282828;
+      background-color: #3d3d3d;
       border-radius: 50%;
       cursor: pointer; }
       .work--lockup .slider--next svg,
@@ -772,10 +772,11 @@ body {
       background-color: transparent;
       direction: ltr; }
       .about--banner a:hover svg {
-        left: 10px; }
+        left: -10px; }
       .about--banner a svg {
+        transform: scaleX(-1);
         position: relative;
-        left: 5px;
+        left: -5px;
         width: 15px;
         fill: #fff;
         transition: left 0.2s ease-in-out;
@@ -942,7 +943,7 @@ body {
       height: 50px;
       align-items: center;
       justify-content: center;
-      background-color: #282828;
+      background-color: #3d3d3d;
       border-radius: 50%;
       cursor: pointer; }
       .speakers--lockup .slider--next svg,
