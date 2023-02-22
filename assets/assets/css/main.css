@@ -1375,7 +1375,6 @@ body {
       color: #fff;
       border: 10px solid #1ebcd9;
       background-position: center;
-      background-size: cover;
       background-repeat: no-repeat; }
       .about-page--options > a:nth-child(1) {
         background-image: url("../img/about-winners.jpg"); }
