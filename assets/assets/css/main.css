@@ -772,10 +772,11 @@ body {
       background-color: transparent;
       direction: ltr; }
       .about--banner a:hover svg {
-        left: 10px; }
+        left: -10px; }
       .about--banner a svg {
+        transform: scaleX(-1);
         position: relative;
-        left: 5px;
+        left: -5px;
         width: 15px;
         fill: #fff;
         transition: left 0.2s ease-in-out;
