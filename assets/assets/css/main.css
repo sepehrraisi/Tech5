@@ -1461,8 +1461,13 @@ body {
   transform: perspective(600px) rotateY(0deg);
 }
 .back{
-  top: 50%;
+  top: 0px;
+  /*padding-top: 50%;*/
   transform:rotateY(180deg);
+  /*background:purple;*/
+}
+.back p{
+  padding-top: 30%;
 }
 
 
