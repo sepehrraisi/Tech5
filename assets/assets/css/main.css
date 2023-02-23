@@ -644,8 +644,8 @@ body {
           display: block; }
         .work--lockup .slider--item-center {
           position: relative;
-          top: 30px;
-          left: 50%;
+          top: 10px;
+          left: 40%;
           transform: translateX(-50%);
           display: block; }
           .work--lockup .slider--item-center a {
@@ -1432,5 +1432,38 @@ body {
       display: none; }
   .about-page--options {
     display: none; } }
+
+.cardy{
+  cursor: pointer;
+  width: 150px;
+  height:150px;
+}
+.front{
+  width:150px;
+  height: 150px;
+  overflow:hidden;
+  backface-visibility:hidden;
+  position:absolute;
+  transition: transform .5s linear;
+}
+.back{
+  width:150px;
+  height: 150px;
+  overflow:hidden;
+  backface-visibility:hidden;
+  position:absolute;
+  transition: transform .5s linear;
+}
+.cardy:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.cardy:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  top: 50%;
+  transform:rotateY(180deg);
+}
+
 
 /*# sourceMappingURL=main.css.map */
