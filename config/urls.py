@@ -19,10 +19,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('events/', include('events.urls')),
+    # path('events/', include('events.urls')),
     path('', include('core.urls')),
     path('', include('events.urls')),
-    path('account/', include('account.urls')),
+    # path('account/', include('account.urls')),
 
     path('admin/', admin.site.urls),
 ]
