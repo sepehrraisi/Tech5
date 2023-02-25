@@ -223,11 +223,6 @@ body {
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
-  @media (max-width: 900px){
-      .body{
-          font-size: 12px;
-      }
-  }
 
 .l-viewport {
   position: relative;
@@ -264,8 +259,6 @@ body {
   @media (max-width: 1180px) {
     .l-side-nav {
       display: none; } }
-
-
 
 .l-main-content {
   position: relative;
@@ -661,11 +654,11 @@ body {
           .work--lockup .slider--item-center a {
             color: #fff; }
           .work--lockup .slider--item-center .slider--item-title {
-            /*margin-top: 25px;*/
-            transform: translate(+50%);
+            margin-top: 25px;
+            transform: translate(+50%,290px);
             font-size: 16px; }
           .work--lockup .slider--item-center .slider--item-description {
-            transform: translate(+50%);
+            transform: translate(+50%,290px);
             display: block; }
           .work--lockup .slider--item-center .slider--item-description2 {
             display: block; }
@@ -698,13 +691,8 @@ body {
     width: 120px;
     height: 120px; }
   .work--lockup .slider--item-center .slider--item-image {
-    margin-left: 5%;
     width: 240px;
     height: 240px; }
-  .work--lockup .slider--item-center .slider--item-title {
-    transform: translate(+33%);}
-  .work--lockup .slider--item-center .slider--item-description {
-    transform: translate(+33%);}
   .work--lockup .slider--next,
   .work--lockup .slider--prev {
     top: 130px; } }
@@ -718,9 +706,9 @@ body {
       width: 190px;
       height: 190px; }
   .work--lockup .slider--item-center .slider--item-title {
-    transform: translate(+13%);}
+    transform: translate(+13%,180px);}
   .work--lockup .slider--item-center .slider--item-description {
-    transform: translate(+13%);}
+    transform: translate(+13%,180px);}
   .work--lockup .slider--item-center .slider--item-description2 {
     font-size: 10px }
     .work--lockup .slider--item-center {
@@ -1464,14 +1452,14 @@ body {
 .cardy{
   cursor: pointer;
   width: 150px;
-  /*height:150px;*/
+  height:150px;
 }
 .front{
   width:150px;
   height: 150px;
   overflow:hidden;
   backface-visibility:hidden;
-  /*position:absolute;*/
+  position:absolute;
   transition: transform .5s linear;
 }
 .back{
@@ -1495,6 +1483,6 @@ body {
   /*background:purple;*/
 }
 .back p{
-  padding-top: 20%;
+  padding-top: 30%;
 }
 /*# sourceMappingURL=main.css.map */

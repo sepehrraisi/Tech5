@@ -177,3 +177,34 @@
           &-left,
           &-right
             display: none
+
+
+
+.cardy
+  cursor: pointer
+  width: 150px
+  height: 150px
+
+.front
+  width: 150px
+  height: 150px
+  overflow: hidden
+  backface-visibility: hidden
+  position: absolute
+  transition: transform .5s linear
+.back
+  width: 150px
+  height: 150px
+  overflow: hidden
+  backface-visibility: hidden
+  position: absolute
+  transition: transform .5s linear
+.cardy:hover > .front
+  transform: perspective(600px) rotateY(-180deg)
+.cardy:hover > .back
+  transform: perspective(600px) rotateY(0deg)
+.back
+  top: 0px
+  transform: rotateY(180deg)
+.back p
+  padding-top: 30%
