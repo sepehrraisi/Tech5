@@ -2345,21 +2345,7 @@ body {
         width: auto;
     }
 
-    .work1--lockup .slider--item-left1, .work1--lockup1 .slider--item-right1 {
-        display: none;
-    }
-}
-.cardy1 {
-    cursor: pointer;
-    width: 150px;
-    /*height:150px;*/
+
 }
 
-.cardy1:hover > .front1 {
-    transform: perspective(600px) rotateY(-180deg);
-}
-
-.cardy1:hover > .back1 {
-    transform: perspective(600px) rotateY(0deg);
-}
 /*# sourceMappingURL=main.css.map */
