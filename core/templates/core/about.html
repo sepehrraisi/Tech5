@@ -40,8 +40,8 @@
                     <ul class="side-nav">
                         <li class="is-active"><span>درباره ما</span></li>
                         {#            <li><span>سخنرانان</span></li>#}
-{#                        <li><span>تیم ما</span></li>#}
-                        <li><span>سایت ها</span></li>
+                        {#                        <li><span>تیم ما</span></li>#}
+                        {#                        <li><span>سایت ها</span></li>#}
                     </ul>
                 </nav>
                 <ul class="l-main-content main-content">
@@ -49,7 +49,7 @@
                         <div class="about-page">
                             <div class="about-page--banner">
                                 <h2>درباره تکفایو</h2>
-                                <p>تکفایو(Tech5)، یک رویداد تکرار شونده در حوزه
+                                <p style="font-size: 100%;">تکفایو(Tech5)، یک رویداد تکرار شونده در حوزه
                                     های مرتبط با انقلاب چهارم
                                     صنعتی(Industry4.0) یا نسل پنجم فنآوری(Technology 5) می باشد. انقلاب چهارم صنعتی ،به
                                     تغییرات شگرف و سریع در فنآوری، صنایع ،مدلهای کسب و کار و حتی زندگی روزمره بشر اطلاق
@@ -80,82 +80,54 @@
                             </div>
                         </div>
                     </li>
-                    <li class="l-section section">
-                        <div class="work">
-                            <h2>سایت های ما</h2>
-                            <div class="work--lockup">
-                                <ul class="slider">
-                                    <li class="slider--item slider--item-left">
-                                        <a href="https://sarajob.ir/">
-                                            <div class="slider--item-image">
-                                                <img src="{% static 'assets/img/sajajob.png' %}" alt="Hamid Tavakoli"
-                                                     >
-                                            </div>
-                                            <p class="slider--item-title">سراجاب</p>
-                                            <p class="slider--item-description">
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="slider--item slider--item-center">
-                                        <a href="https://upfactor.ir/">
-                                            <div class="slider--item-image">
-                                                <img src="{% static 'assets/img/upfactor.png' %}" alt="sarajob"
-                                                >
-                                            </div>
-                                            <p class="slider--item-title">آپفکتور</p>
-
-                                        </a>
-                                    </li>
-                                    <li class="slider--item slider--item-right">
-                                        <a href="http://aran5.ir/">
-                                            <div class="slider--item-image">
-                                                <img src="{% static 'assets/img/aran.jfif' %}" alt="hamid tavakoli"
-                                                     >
-                                            </div>
-                                            <p class="slider--item-title">آران5</p>
-                                            <p class="slider--item-description">
-                                            </p>
-
-
-                                        </a>
-                                    </li>
-
-                                </ul>
-                                <div class="slider--prev">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
-                                         xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                                </div>
-                                <div class="slider--next">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
-                                         xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    {#                    <li class="l-section section">#}
+                    {#                        <div class="work1">#}
+                    {#                            <h2>لوگوها</h2>#}
+                    {#                            <div class="work1--lockup">#}
+                    {#                                <ul class="slider1">#}
+                    {#                                    <li class="slider--item1 slider--item-left1 " style="pointer-events: auto;">#}
+                    {#                                        <a href="https://aran5.ir/">#}
+                    {#                                            <div class="slider--item-image1 front1">#}
+                    {#                                                <img src="{% static 'assets/img/aran.png' %}" alt="Hamid Tavakoli"#}
+                    {#                                                >#}
+                    {#                                            </div>#}
+                    {#                                            <p class="slider--item-title1">آران 5</p>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                    <li class="slider--item1 slider--item-center1 ">#}
+                    {#                                        <a href="https://upfactor.ir/">#}
+                    {#                                            <div class="slider--item-image1 ">#}
+                    {#                                                <img src="{% static 'assets/img/upfactor.png' %}" alt="upfactor logo">#}
+                    {#                                            </div>#}
+                    {#                                            <div>#}
+                    {#                                                <p class="slider--item-title1">آپفکتور</p>#}
+                    {##}
+                    {#                                            </div>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                    <li class="slider--item1 slider--item-right1 " style="pointer-events: auto">#}
+                    {#                                        <a href="https://sarajob.ir/">#}
+                    {#                                            <div class="slider--item-image1 ">#}
+                    {#                                                <img src="{% static 'assets/img/sarajob.png' %}"#}
+                    {#                                                     alt="sarajob logo">#}
+                    {#                                            </div>#}
+                    {#                                            <p class="slider--item-title1">سراجاب</p>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                </ul>#}
+                    {#                            </div>#}
+                    {#                        </div>#}
+                    {#                    </li>#}
                 </ul>
             </div>
         </div>
     </div>
     <ul class="outer-nav">
         <li class="is-active">درباره ما</li>
-        <li>سایت ها</li>
+        {#        <li>سایت ها</li>#}
         {#    <li>سخنرانان</li>#}
-{#        <li>تماس با ما</li>#}
-{#        <li>ثبت نام</li>#}
+        {#        <li>تماس با ما</li>#}
+        {#        <li>ثبت نام</li>#}
     </ul>
 </div>
 
