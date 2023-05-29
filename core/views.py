@@ -15,6 +15,9 @@ def home_view(request):
 def about_view(request):
     return render(request, 'core/about.html')
 
+def event_view(request):
+    return render(request, 'core/event.html')
+
 
 def home_ex_view(request):
     return render(request, 'core/home_ex.html')

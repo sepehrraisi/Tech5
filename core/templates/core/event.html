@@ -1,0 +1,377 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tech5 | تکفایو</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HTML5 website template">
+    <meta name="keywords" content="global, template, html, sass, jquery">
+    <meta name="author" content="Bucky Maler">
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+        <img src="{% static 'assets/img/logo-site-white.png' %}" alt="Global">
+        <p>Global</p>
+    </a>
+    <p class="device-notification--message">لطفا برای تجربه مفید تر از صفحه نمایش بزرگ تر استفاده کنید یا گوشی خود را به
+        حالت عمودی در بیاورید.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+    <div class="container">
+        <div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+            <div class="l-wrapper">
+                <header class="header">
+                    <a class="header--logo" href="#0">
+                        <img src="{% static 'assets/img/logo-site-white.png' %}" alt="Tech5" width="288" height="128">
+                    </a>
+                    <div class="header--nav-toggle">
+                        <span></span>
+                    </div>
+                </header>
+                <nav class="l-side-nav">
+                    <ul class="side-nav">
+                        <li class="is-active"><span>فریلنسرشو</span></li>
+                        <li><span>سخنرانان</span></li>
+                        {#                        <li><span>تیم ما</span></li>#}
+                        {#                        <li><span>سایت ها</span></li>#}
+                    </ul>
+                </nav>
+                <ul class="l-main-content main-content">
+                    <li class="l-section section section--is-active">
+                        <div class="about-page">
+                            <div class="about-page--banner">
+                                <h2>فریلنسرشو</h2>
+                                <p style="font-size: 100%;">جهان قرن بیست و یکم، تغییرات شگرفی را نسبت به دو دهه قبل به خود دیده
+                                    است!<br>
+                                    رواج روزافزون ابزارهای هوشمند زندگی بشر را دستخوش تغییر و تحولات فراوان کرده است.
+                                    همزمان با این تغییرات، راه وروش موفقیت شغلی نیز تحولات فراوانی را به خود دیده
+                                    است.دیگر روشهای قدیمی نه برای نسل جوان جذابیت دارند و نه منجر به موفقیت میشوند.
+                                    "فریلنسر" شدن؛ قطعا مهمترین روش موفقیت شغلی در دهه آینده است. ازادی مطلق زمان و مکان
+                                    کاری، عدم نیاز به سرمایه، استفاده ی بهینه از مهارت و تخصص های نوین و درامد بالا از
+                                    خصوصیات این مدل شغلی است.
+                                    اما چطور میتوان فریلنسر شد؟
+                                    چه کسانی برای ورود به این عرصه مناسبند؟
+                                    برای موفقیت شغلی یک فریلنسر چه مسیری را باید طی کند؟
+                                    تسهیلگران و بازیگران اصلی این اکوسیستم چه کسانی هستند؟
+                                    از کجا باید آغاز کنیم؟
+                                    چطور میتوانیم از خانه یا یک کافه، پروژه ای را در اروپا و امریکا انجام دهیم و درامد
+                                    دلاری هنگفت بدست آوریم؟
+                                    از چه سنی میتوانیم وارد بازار فریلنسری شویم؟
+
+                                    پاسخ همه این سوال ها را در رویداد تکفایو_سفر قهرمانی خوداشتغالی به شما خواهیم داد.
+
+                                </p>
+                                <a href="{% url 'core:home' %}">بازگشت به صفحه اصلی
+
+                                    <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                         style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                                </a>
+                                <img src="{% static 'assets/img/about-visual.png' %}" alt="About Us">
+                            </div>
+                        </div>
+                    </li>
+                    {#                    <li class="l-section section">#}
+                    {#                        <div class="work1">#}
+                    {#                            <h2>لوگوها</h2>#}
+                    {#                            <div class="work1--lockup">#}
+                    {#                                <ul class="slider1">#}
+                    {#                                    <li class="slider--item1 slider--item-left1 " style="pointer-events: auto;">#}
+                    {#                                        <a href="https://aran5.ir/">#}
+                    {#                                            <div class="slider--item-image1 front1">#}
+                    {#                                                <img src="{% static 'assets/img/aran.png' %}" alt="Hamid Tavakoli"#}
+                    {#                                                >#}
+                    {#                                            </div>#}
+                    {#                                            <p class="slider--item-title1">آران 5</p>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                    <li class="slider--item1 slider--item-center1 ">#}
+                    {#                                        <a href="https://upfactor.ir/">#}
+                    {#                                            <div class="slider--item-image1 ">#}
+                    {#                                                <img src="{% static 'assets/img/upfactor.png' %}" alt="upfactor logo">#}
+                    {#                                            </div>#}
+                    {#                                            <div>#}
+                    {#                                                <p class="slider--item-title1">آپفکتور</p>#}
+                    {##}
+                    {#                                            </div>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                    <li class="slider--item1 slider--item-right1 " style="pointer-events: auto">#}
+                    {#                                        <a href="https://sarajob.ir/">#}
+                    {#                                            <div class="slider--item-image1 ">#}
+                    {#                                                <img src="{% static 'assets/img/sarajob.png' %}"#}
+                    {#                                                     alt="sarajob logo">#}
+                    {#                                            </div>#}
+                    {#                                            <p class="slider--item-title1">سراجاب</p>#}
+                    {#                                        </a>#}
+                    {#                                    </li>#}
+                    {#                                </ul>#}
+                    {#                            </div>#}
+                    {#                        </div>#}
+                    {#                    </li>#}
+
+
+                    <li class="l-section section">
+                        <div class="work">
+                            <h2>سخنرانان</h2>
+                            <div class="work--lockup">
+                                <ul class="slider">
+                                    <li class="slider--item slider--item-left cardy">
+                                        {#                                        <a href="https://namology.ir">#}
+                                        <div class="slider--item-image front">
+                                            <img src="{% static 'assets/img/Hamid.png' %}" alt="Hamid Tavakoli"
+                                                 width="512">
+                                        </div>
+                                        <div class="back slider--item-image">
+                                            <p class="slider--item-description2">
+                                                مشاور نامولوژی
+                                                <br>با تجربه‌ی مدیریت ده‌ها پروژه‌ی انتخاب نام برند
+                                                موسس نامی‌نیک.کام؛ اولین وب‌سایت تخصصی نامولوژی در کشور، سال 1391
+                                                مدرس اولین کارگاه تخصصی نام برند در کشور، سال 1392 | لیست 70 رویداد
+                                                آموزشی
+                                                کارشناس نامولوژی و برندینگ در برنامه‌های رادیویی صدا و سیما، از 1397
+                                                |
+                                                لیست 30 برنامه
+                                                نویسنده کتاب نامولوژی + نگارش مقالات نامولوژی و برندینگ در
+                                                روزنامه‌ها و
+                                                مجلات معتبر
+                                            </p>
+                                        </div>
+                                        <p class="slider--item-title">حمید توکلی</p>
+                                        <a class="slider--item-description"
+                                           href="https://instagram.com/hamidtavakoli_ir">
+                                            <img src="{% static 'assets/img/insta.jfif' %}" width="25px"
+                                                 style="border-radius: 20px">
+                                        </a>
+                                        <a class="slider--item-description"
+                                           href="https://namology.ir">
+                                            <img src="{% static 'assets/img/web-logo.png' %}" width="25px"
+                                                 style="border-radius: 20px">
+                                        </a>
+                                        {#                                        </a>#}
+                                    </li>
+                                    <li class="slider--item slider--item-center cardy">
+                                        {#                                        <a href="#0">#}
+                                        <div class="slider--item-image front">
+                                            <img src="{% static 'assets/img/shajari2.png' %}" alt="hadi shajari">
+                                        </div>
+
+                                        <div class="back slider--item-image">
+                                            <p class="slider--item-description2">بنیانگذار ارزیشو و آریامدتور<br>
+                                                عاشق رسیدن از صفر به یک در دنیا صفر و
+                                                یک<br>
+                                                نویسنده‌ی کتاب کسب‌وکار گردشگری سلامت،
+                                                هم‌بنیان‌گذار آریامدتور و سیتوسا
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="slider--item-title">هادی شجاری</p>
+                                            <a class="slider--item-description"
+                                               href="https://www.instagram.com/mobonews/">
+                                                <img src="{% static 'assets/img/insta.jfif' %}" width="25px"
+                                                     style="border-radius: 20px"></a>
+                                            <a class="slider--item-description"
+                                               href="https://hadishajari.ir/">
+                                                <img src="{% static 'assets/img/web-logo.png' %}" width="25px"
+                                                     style="border-radius: 20px">
+                                            </a>
+                                        </div>
+                                        {#                                        </a>#}
+                                    </li>
+                                    <li class="slider--item slider--item-right cardy">
+                                        {#                                        <a href="https://megajs.com/">#}
+                                        <div class="slider--item-image front">
+                                            <img src="{% static 'assets/img/hajimaghsodi.png' %}"
+                                                 alt="hamid tavakoli" width=400px>
+                                        </div>
+                                        <p class="slider--item-title">محمدرضا حاجی مقصودی</p>
+                                        <div class="back slider--item-image">
+                                            <p class="slider--item-description2">
+                                                MEGA JS مدیر و موسس سایت
+                                                <br>عاشق دنیای برنامه نویسی وبسایت و اپلیکیشن
+                                                مخصوصا زبان قدرتمند جاوااسکریپت و فریمورک ها و کتابخونه های جذابش
+                                            </p>
+                                        </div>
+                                        <a class="slider--item-description" href="https://instagram.com/megajs__">
+                                            <img
+                                                    src="{% static 'assets/img/insta.jfif' %}" width="25px"
+                                                    style="border-radius: 20px"></a>
+                                        <a class="slider--item-description" href="https://youtube.com/@mega-js"><img
+                                                src="{% static 'assets/img/youtube.png' %}" width="25px"
+                                                style="border-radius: 7px"></a>
+                                        <a class="slider--item-description"
+                                           href=" https://megajs.com/">
+                                            <img src="{% static 'assets/img/web-logo.png' %}" width="25px"
+                                                 style="border-radius: 20px">
+                                        </a>
+
+                                        {#                                        </a>#}
+                                    </li>
+                                    <li class="slider--item cardy">
+                                        {#                                        <a href="https://hadishajari.ir/">#}
+                                        <div class="slider--item-image front">
+                                            <img src="{% static 'assets/img/najaf.jfif' %}"
+                                                 alt="vahid najafi">
+                                        </div>
+                                        <p class="slider--item-title">وحید نجفی</p>
+                                        <div class="back slider--item-image">
+                                            <p class="slider--item-description2"> تکنیکال آرتیست - فوق لیسانس ژئوتکنیک -
+                                                خالق نرم افزار tik3d
+                                                <br>
+                                                خالق یکی از 10 نرم افزار برتر حوزه معماری، سال 2013
+                                                <br>
+                                                و بیش از 10 سال تجربه کسب درآمد ارزی از کشورهای اروپایی
+
+                                            </p>
+                                        </div>
+
+
+                                        <a class="slider--item-description"
+                                           href="https://www.tik3d.com/">
+                                            <img src="{% static 'assets/img/web-logo.png' %}" width="25px"
+                                                 style="border-radius: 20px">
+                                        </a>
+                                        {#                                        </a>#}
+                                    </li>
+                                    <li class="slider--item cardy">
+                                        {#                                        <a href="#0">#}
+                                        <div class="slider--item-image front">
+                                            <img src="{% static 'assets/img/yari.jfif' %}" alt="vahid najafi">
+                                        </div>
+                                        <p class="slider--item-title">نسترن یاری</p>
+                                        <div class="back slider--item-image">
+                                            <p class="slider--item-description2">فعالت نسترن یاری از سال 1395 با سمت
+                                                دیجیتال مارکتر در استارت آپی در حوزه گرافیک شروع شد و تا به امروز به
+                                                عنوان استراتژیست محتوا و مشاور بازاریابی دیجیتال در کنار برند های مختلف
+                                                مشغول به فعالیت بوده است . در حال حاضر مدیر عامل آژانس دیجیتال مارکتینگ
+                                                اسپارک و موسس آکادمی یاری که در حوزه ی آموزش فعالیت دارد ٬میباشد.</p>
+                                        </div>
+                                        <a class="slider--item-description"
+                                           href="https://www.instagram.com/nastaran_yari/"><img
+                                                src="{% static 'assets/img/insta.jfif' %}" width="25px"
+                                                style="border-radius: 20px"></a>
+
+                                        {#                                        </a>#}
+                                    </li>
+                                    <li class="slider--item cardy">
+                                        {#                                        <a href="https://filoger.com/">#}
+                                        <div class="slider--item-image front">
+                                            <img src="{% static 'assets/img/hadad.png' %}" alt="poria hadad">
+                                        </div>
+                                        <p class="slider--item-title">پوریا حداد</p>
+
+
+                                        <div class="back slider--item-image">
+                                            <p class="slider--item-description2">
+                                                فناوری‌های نوین<br> کارشناس ارشد هوش مصنوعی و در حال حاضر مدیرعامل شرکت
+                                                فناوری‌های پیشرو هوش مصنوعی کارِن هستم که برند تاچ فلور | TouchFloor یکی
+                                                از زیر مجموعه‌های اون هست.
+                                                رتبه سوم تاچ‌فلور در میان استارتاپ‌های کشور
+                                            </p>
+                                        </div>
+                                        <a class="slider--item-description"
+                                           href="https://www.instagram.com/pooria.haddad/">
+                                            <img src="{% static 'assets/img/insta.jfif' %}" width="25px"
+                                                 style="border-radius: 20px"></a>
+                                        <a class="slider--item-description"
+                                           href="https://filoger.com/">
+                                            <img src="{% static 'assets/img/web-logo.png' %}" width="25px"
+                                                 style="border-radius: 20px">
+                                        </a>
+                                        {#                                        </a>#}
+                                    </li>
+
+                                    <li class="slider--item cardy">
+                                        {#                                        <a href="https://filoger.com/">#}
+                                        <div class="slider--item-image front">
+                                            <img src="{% static 'assets/img/jalali.jfif' %}" alt="amirhosein jalili">
+                                        </div>
+                                        <p class="slider--item-title">امیرحسین جلیلی</p>
+
+
+                                        <div class="back slider--item-image">
+                                            <p class="slider--item-description2">
+                                                کارآفرین
+                                            </p>
+                                        </div>
+                                        <a class="slider--item-description"
+                                           href="https://upfactor.ir/">
+                                            <img src="{% static 'assets/img/web-logo.png' %}" width="25px"
+                                                 style="border-radius: 20px">
+                                        </a>
+                                        {#                                        </a>#}
+                                    </li>
+
+                                    <li class="slider--item cardy">
+                                        <div class="slider--item-image front">
+                                            <img src="{% static 'assets/img/ejlali.jfif' %}" alt="hafez ejlali">
+                                        </div>
+                                        <p class="slider--item-title">حافظ اجلالی</p>
+
+                                        <div class="back slider--item-image">
+                                            <p class="slider--item-description2">
+                                                CEO of WINaTALENT
+                                            </p>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                                <div class="slider--prev">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
+                                         xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                                </div>
+                                <div class="slider--next">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"
+                                         xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="outer-nav">
+        <li class="is-active">فریلنسرشو</li>
+        <li>سخنرانان</li>
+        {#        <li>سایت ها</li>#}
+        {#    <li>سخنرانان</li>#}
+        {#        <li>تماس با ما</li>#}
+        {#        <li>ثبت نام</li>#}
+    </ul>
+</div>
+
+{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>#}
+<script src="{% static 'assets/js/vendor/jquery-2.2.4.min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="{% static 'assets/js/vendor/jquery-2.2.4.min.js' %}"><\/script>')</script>
+<script src="{% static 'assets/js/functions-min.js' %}"></script>
+</body>
+</html>

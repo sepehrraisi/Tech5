@@ -32,7 +32,7 @@
                     <a class="header--logo" href="#0">
                         <img src="{% static 'assets/img/logo-site-white2.png' %}" alt="Tech5" width="188" height="128">
                     </a>
-{#                    <button class="header--cta cta">ثبت نام</button>#}
+                    {#                    <button class="header--cta cta">ثبت نام</button>#}
                     <div class="header--nav-toggle">
                         <span></span>
                     </div>
@@ -46,7 +46,6 @@
                         <li><span>تماس با ما</span></li>
 
                         {#            <li><span>سخنرانان</span></li>#}
-                        <li><span>تماس با ما</span></li>
 
                     </ul>
                 </nav>
@@ -55,17 +54,17 @@
                         <div class="intro">
                             <div class="intro--banner">
                                 <h1>تکفایو<br>رسانه تخصصی<br>اقتصاد نسل 5</h1>
-{#                                <button class="cta">ثبت نام#}
-{#                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"#}
-{#                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"#}
-{#                                         viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"#}
-{#                                         xml:space="preserve">#}
-{#                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">#}
-{#                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>#}
-{#                  </g>#}
-{#                  </svg>#}
-{#                                    <span class="btn-background"></span>#}
-{#                                </button>#}
+                                {#                                <button class="cta">ثبت نام#}
+                                {#                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"#}
+                                {#                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"#}
+                                {#                                         viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;"#}
+                                {#                                         xml:space="preserve">#}
+                                {#                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">#}
+                                {#                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>#}
+                                {#                  </g>#}
+                                {#                  </svg>#}
+                                {#                                    <span class="btn-background"></span>#}
+                                {#                                </button>#}
                                 <img src="{% static 'assets/img/introduction-visual.png' %}" alt="Welcome">
                             </div>
                             <div class="intro--options">
@@ -88,48 +87,118 @@
                         </div>
                     </li>
 
+                    <li class="l-section section">
+                        <div class="about">
+                            <div class="about--banner">
+                                <h2>رویداد<br>تکرار شونده<br>اقتصاد نسل 5</h2>
+                                <p style="font-size: 16px;">تکفایو | Tech5<br>یک رویداد تکرار شونده<br>در حوزه های مرتبط
+                                    با انقلاب چهارم
+                                    صنعتی(Industry4.0)<br> یا نسل پنجم فنآوری(Technology 5) می باشد.</p>
+                                <a href="{% url 'core:about' %}">بیشتر بخوانید
+                                    <span>
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             viewBox="0 0 150 118"
+                                             style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                          <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                                        </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <img src="{% static 'assets/img/robot.png' %}" alt="About Us" height="411px"
+                                     style="bottom: 10%">
+                            </div>
+                            {#                            <div class="about--options">#}
+                            {#                                <a href="#0">#}
+                            {#                                    <h3>سخنرانان</h3>#}
+                            {#                                </a>#}
+                            {#                                <a href="#0">#}
+                            {#                                    <h3>فلسفه</h3>#}
+                            {#                                </a>#}
+                            {#                                <a href="#0">#}
+                            {#                                    <h3>تاریخچه</h3>#}
+                            {#                                </a>#}
+                            {#                            </div>#}
+                        </div>
+                    </li>
+
+
+                    <li class="l-section section">
+                        <div class="about">
+                            <div class="about--banner">
+                                <h2>وبلاگ</h2>
+
+
+                            </div>
+                            {#                            <div class="about--options">#}
+                            {#                                <a href="#0">#}
+                            {#                                    <h3>سخنرانان</h3>#}
+                            {#                                </a>#}
+                            {#                                <a href="#0">#}
+                            {#                                    <h3>فلسفه</h3>#}
+                            {#                                </a>#}
+                            {#                                <a href="#0">#}
+                            {#                                    <h3>تاریخچه</h3>#}
+                            {#                                </a>#}
+                            {#                            </div>#}
+                        </div>
+                    </li>
+
 
                     <li class="l-section section " style="font-size: 17px;">
                         <div class="intro">
                             <div class="intro--banner">
-                                <p class="free2">جهان قرن بیست و یکم، تغییرات شگرفی را نسبت به دو دهه قبل به خود دیده
-                                    است!<br>
-                                    رواج روزافزون ابزارهای هوشمند زندگی بشر را دستخوش تغییر و تحولات فراوان کرده است.
-                                    همزمان با این تغییرات، راه وروش موفقیت شغلی نیز تحولات فراوانی را به خود دیده
-                                    است.دیگر روشهای قدیمی نه برای نسل جوان جذابیت دارند و نه منجر به موفقیت میشوند.
-                                    "فریلنسر" شدن؛ قطعا مهمترین روش موفقیت شغلی در دهه آینده است. ازادی مطلق زمان و مکان
-                                    کاری، عدم نیاز به سرمایه، استفاده ی بهینه از مهارت و تخصص های نوین و درامد بالا از
-                                    خصوصیات این مدل شغلی است.
-                                    اما چطور میتوان فریلنسر شد؟
-                                    چه کسانی برای ورود به این عرصه مناسبند؟
-                                    برای موفقیت شغلی یک فریلنسر چه مسیری را باید طی کند؟
-                                    تسهیلگران و بازیگران اصلی این اکوسیستم چه کسانی هستند؟
-                                    از کجا باید آغاز کنیم؟
-                                    چطور میتوانیم از خانه یا یک کافه، پروژه ای را در اروپا و امریکا انجام دهیم و درامد
-                                    دلاری هنگفت بدست آوریم؟
-                                    از چه سنی میتوانیم وارد بازار فریلنسری شویم؟
 
-                                    پاسخ همه این سوال ها را در رویداد تکفایو_سفر قهرمانی خوداشتغالی به شما خواهیم داد.
-                                </p>
 
-                                <p class="free2">چه کسانی مخاطب این برنامه هستند؟</p>
+                                <div class="free2">
+                                    <h2>فریلنسرشو</h2>
+                                </div>
+                                <div class=" work-request">
+                                    <h2></h2>
+                                    <a href="{% url 'core:event' %}">مشاهئه جزئیات </a>
+                                </div>
+
+
+                                    <div class="free2"><h2>تور تخصصی جیتکس</h2></div>
+
+
+                                </div>
+                            <p>چه کسانی مخاطب این رویدادها هستند</p>
+                                <div class="intro--options1">
+                                    <a href="#">
+                                        <p>۱. هر جوانی که دارای مهارت کافی در استفاده از ابزارهای دیجیتال است.</p>
+                                        <p>۲.هر کسی که علاقمند به رشد و توسعه فردی خود میباشد.</p>
+                                    </a>
+                                    <a href="#">
+                                        <p>۳. هر نوجوانی که میخواهد برای انتخاب مسیر اینده تحصیلی شغلی اش هوشیار عمل
+                                            کند.</p>
+                                        <p>۴. هرکسی که مسوولیت زندگی اش را برعهده میگیردو برای ساختن یک زندگی موفق تلاش
+                                            میکند</p>
+                                    </a>
+
+                                </div>
                             </div>
-                            <div class="intro--options1">
-                                <a href="#">
-                                    <p>۱. هر جوانی که دارای مهارت کافی در استفاده از ابزارهای دیجیتال است.</p>
-                                    <p>۲.هر کسی که علاقمند به رشد و توسعه فردی خود میباشد.</p>
-                                </a>
-                                <a href="#">
-                                    <p>۳. هر نوجوانی که میخواهد برای انتخاب مسیر اینده تحصیلی شغلی اش هوشیار عمل
-                                        کند.</p>
-                                    <p>۴. هرکسی که مسوولیت زندگی اش را برعهده میگیردو برای ساختن یک زندگی موفق تلاش
-                                        میکند</p>
-                                </a>
+                    </li>
 
+                      <li class="l-section section">
+                        <div class="contact">
+                            <div class="contact--lockup">
+                                <div class="modal">
+                                    <div class="modal--information">
+                                        <p>استان البرز، کرج، حصارک، دانشگاه خوارزمی، خانه خلاق</p>
+                                        <a href="mailto:contact@tech5.ir">contact@tech5.ir</a>
+                                        <a href="tel:+989125866638">+98 912 586 6638</a>
+                                        <a href="tel:+989393750790">+98 939 375 0790</a>
+                                    </div>
+                                    <ul class="modal--options">
+                                        {#                    <li><a href="#0">در نقشه</a></li>#}
+                                        <li><a href="mailto:contact@tech5.ir">تماس با ما</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </li>
-
                     <li class="l-section section">
                         <div class="work">
                             <h2>سخنرانان</h2>
@@ -372,7 +441,7 @@
                                     <li class="slider--item1 slider--item-left1 " style="pointer-events: auto;">
                                         <a href="https://aran5.ir/">
                                             <div class="slider--item-image1 front1">
-                                                <img src="{% static 'assets/img/aran.png'%}" alt="Hamid Tavakoli"
+                                                <img src="{% static 'assets/img/aran.png' %}" alt="Hamid Tavakoli"
                                                 >
                                             </div>
                                             {#                                            <p class="slider--item-title1">آران 5</p>#}
@@ -424,39 +493,6 @@
 
                     </li>
 
-
-                    <li class="l-section section">
-                        <div class="about">
-                            <div class="about--banner">
-                                <h2>رویداد<br>تکرار شونده<br>اقتصاد نسل 5</h2>
-                                <p style="font-size: 16px;">تکفایو | Tech5<br>یک رویداد تکرار شونده<br>در حوزه های مرتبط با انقلاب چهارم
-                                    صنعتی(Industry4.0)<br> یا نسل پنجم فنآوری(Technology 5) می باشد.</p>
-                                <a href="{% url 'core:about' %}">بیشتر بخوانید
-                                    <span>
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                                             style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                          <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                                        </g>
-                                        </svg>
-                                    </span>
-                                </a>
-                                <img src="{% static 'assets/img/robot.png' %}" alt="About Us" height="411px" style="bottom: 10%">
-                            </div>
-                            {#                            <div class="about--options">#}
-                            {#                                <a href="#0">#}
-                            {#                                    <h3>سخنرانان</h3>#}
-                            {#                                </a>#}
-                            {#                                <a href="#0">#}
-                            {#                                    <h3>فلسفه</h3>#}
-                            {#                                </a>#}
-                            {#                                <a href="#0">#}
-                            {#                                    <h3>تاریخچه</h3>#}
-                            {#                                </a>#}
-                            {#                            </div>#}
-                        </div>
-                    </li>
 
                     {#          <li class="l-section section">#}
                     {#            <div class="speakers">#}
@@ -511,24 +547,9 @@
                     {#              </div>#}
                     {#            </div>#}
                     {#          </li>#}
-                    <li class="l-section section">
-                        <div class="contact">
-                            <div class="contact--lockup">
-                                <div class="modal">
-                                    <div class="modal--information">
-                                        <p>استان البرز، کرج، حصارک، دانشگاه خوارزمی، خانه خلاق</p>
-                                        <a href="mailto:contact@tech5.ir">contact@tech5.ir</a>
-                                        <a href="tel:+989125866638">+98 912 586 6638</a>
-                                        <a href="tel:+989393750790">+98 939 375 0790</a>
-                                    </div>
-                                    <ul class="modal--options">
-                                        {#                    <li><a href="#0">در نقشه</a></li>#}
-                                        <li><a href="mailto:contact@tech5.ir">تماس با ما</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+
+
+
                     <li class="l-section section">
                         <div class="hire work-request">
                             <h2></h2>
@@ -620,21 +641,20 @@
                             {#                                </div>#}
                             {#                                <input type="submit" value="ثبت نام">#}
                             {#                            </form>#}
-{#                        </div>#}
-{#                    </li>#}
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
     <ul class="outer-nav">
         <li class="is-active">صفحه اصلی</li>
-        <li>فریلنسرشو</li>
-        <li>سخنرانان</li>
-        <li>اسپانسرها</li>
-        <li>درباره ما</li>
-        {#    <li>سخنرانان</li>#}
+        <li>درباره تکفایو</li>
+        <li>وبلاگ</li>
+        <li>رویدادها</li>
         <li>تماس با ما</li>
-        <li>ثبت نام</li>
+        {#    <li>سخنرانان</li>#}
+
     </ul>
 </div>
 

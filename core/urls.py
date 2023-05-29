@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import (
     home_view,
-    about_view,
+    about_view,event_view,
     home_ex_view,
     TeammateRequestFormView,
     GymRequestFormView,
@@ -12,6 +12,7 @@ app_name = 'core'
 urlpatterns = [
     path('', home_view, name='home'),
     path('about/', about_view, name='about'),
+    path('event/', event_view, name='event'),
     path('ex/', home_ex_view, name='exhome'),
     path('teammate-request/', TeammateRequestFormView.as_view(), name='teammate-request'),
     path('gym-request/', GymRequestFormView.as_view(), name='gym-request'),
